@@ -9,7 +9,7 @@ export class BasicPage {
   public press: number = 0;
   public pan: number = 0;
   public swipe: number = 0;
-  public tap: number = 0;
+  public tap: number = 100;
   constructor() {
 
   }
@@ -23,7 +23,7 @@ export class BasicPage {
     this.swipe++
   }
   tapEvent(e) {
-    this.tap++
+    this.tap--
   }
 
 }
